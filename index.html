@@ -7,16 +7,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>My App</title>
     <!-- Path to Framework7 Library CSS-->
- <link rel="stylesheet" href="/lib/framework7/css/framework7.material.css">
+     <link rel="stylesheet" href="css/framework7.material.css">
  <!--<link rel="stylesheet" href="../../dist/css/framework7.ios.min.css">-->
- <link rel="stylesheet" href="/lib/framework7/css/framework7.material.colors.css">
+ <link rel="stylesheet" href="css/framework7.material.colors.css">
  
 <!-- <link rel="stylesheet" href="../../dist/css/framework7.ios.colors.min.css">-->
-<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css"> 
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css"> 
 <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Jura|Lobster|Rajdhani|Roboto+Condensed" rel="stylesheet"> 
-<link rel="stylesheet" href="css/material-icons.css">
-<link rel="stylesheet" href="css/mystyle.css">
+ <link href="https://fonts.googleapis.com/css?family=Jura|Lobster|Rajdhani|Roboto+Condensed" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/mystyle.css">
     
     
     <!-- Path to your custom app styles-->
@@ -32,7 +32,7 @@
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal panelgray">
-		<img src="/img/222.png" width="100%">
+		<img src="/img/222.png">
       <div class="content-block">
         
           <div class="content-block">
@@ -66,25 +66,27 @@
              Вискозиметры
           </div>
         </div>
-       </a>
+        </a>
+     
     </li>
     <li class="accordion-item">                  
-      <a href="contacts.html" class="item-content item-link">
+        <a href="contacts.html" class="item-content item-link">
         <div class="item-inner">
           <div class="item-title">
-        	 Запорная арматура
+         Запорная арматура
           </div>
         </div>
-       </a>
+        </a>
     </li>
     
-   <li class="accordion-item"><a href="#about" class="item-content item-link">
+        <li class="accordion-item"><a href="#about" class="item-content item-link">
         <div class="item-inner">
             <div class="item-title">
-    		    Микрошприцы
+        Микрошприцы
           </div>
-          </div>
-        </a>        
+             </div></a>
+     
+        
     </li>
 
   </ul>
@@ -137,23 +139,8 @@
 		</ul>
       </div>
     </div>
-        
-   
-      
-        
-                      
-                     
-    
-      
-
-                  
-
- 
-
-  
-      </div>
     </div>
-
+    </div>
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
@@ -161,8 +148,7 @@
         <!-- Top Navbar-->
         
         
-        
-        <div class="navbar navbar-bottom theme-black">
+        <div class="navbar navbar-bottom theme-red">
           <!-- Navbar inner for Index page-->
           <div data-page="index" class="navbar-inner">  
             <div class="Left">
@@ -297,7 +283,39 @@
 				</div>
         
         
-
+         <div class="content-block-title">What about simple navigation?</div>
+              <div class="list-block">
+                <ul onchange="ChangeList()">
+                  <li><a href="#about" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">About</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#services" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Services</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#form" class="item-link">c
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Form</div>
+                        </div>
+                      </div></a></li>
+                      <li><a href="search.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">Search</div>
+                        </div>
+                      </div></a></li>
+                     <li><a href="cars.html" data-context-name="cars" class="item-link item-content external">
+                      <div class="item-inner">
+                        <div class="item-title">My Cars</div>
+                      </div></a></li>
+                </ul>
+              </div>
               <div class="content-block-title">Side panels</div>
               <div class="content-block">
                 <div class="row">
@@ -332,15 +350,14 @@
     <!-- Each "cell" has col-[widht in percents] class -->
     <div class="col-50">
         
-      	<img  id="change" width="100%" name="change" src="/img/pic1.png" onclick="swapImage();StartStop()" />
+      	<img  id="change"  name="change" src="/img/pic1.png" onclick="swapImage();StartStop()" />
      <input type=button value="Запуск/Остановить" onclick="StartStop()" class="button button-big button-fill color-green">
    </div>
     <div class="col-50">
-    <img  id="change1" width="100%" name="change1" src="/img/pic1.png" onclick="swapImage1();ClearСlock()" />
+    <img  id="change1" name="change1" src="/img/pic1.png" onclick="swapImage1();ClearСlock()" />
     <!--	<img  id="change2" name="change2" src="/img/pic3.png" onclick="swapImage1();ClearСlock()" />-->
      <input type=button value="Обнулить" onclick="ClearСlock()" class="button button-big button-fill color-red">
 	 
-     
      
     </div>
     </div>  
@@ -378,9 +395,12 @@
         </div>
       </div>-->
     </div>
-    <!-- Path to Framework7 Library JS-->    <!-- Path to your app js-->
+    <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="/lib/framework7/js/framework7.js"></script>
-    <script type="text/javascript" src="/lib/framework7/js/my-app.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-  </body>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  
+        
+        
+        </body>
 </html>
